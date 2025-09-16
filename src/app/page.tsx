@@ -446,7 +446,7 @@ export default function Home() {
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
               View Investor Deck
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 text-lg font-semibold backdrop-blur-sm transition-all duration-300">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 text-lg font-semibold backdrop-blur-sm transition-all duration-300 bg-white/10">
               Become a Partner
             </Button>
           </div>
