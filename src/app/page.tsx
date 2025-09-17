@@ -885,15 +885,6 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
-
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-10 py-4 text-lg font-bold shadow-2xl hover:shadow-3xl transition-all duration-300">
-              View Investor Deck
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900 px-10 py-4 text-lg font-semibold bg-white/10">
-              Become a Partner
-            </Button>
-          </div>
         </div>
       </section>
 
