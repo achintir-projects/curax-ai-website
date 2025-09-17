@@ -1096,21 +1096,9 @@ export default function Home() {
 
           <div className="pt-12 border-t border-gray-200">
             <div className="text-center mb-8">
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600">
                 © 2024 CuraX AI, a Tulwe Group venture. All rights reserved.
               </p>
-              <div className="flex flex-wrap justify-center gap-8 text-sm">
-                <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold">Privacy Policy</a>
-                <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold">Terms of Service</a>
-                <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold">HIPAA Compliance</a>
-                <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold">GDPR Compliance</a>
-                <a href="#" className="text-blue-600 hover:text-blue-800 font-semibold">Data Protection</a>
-                <a href="mailto:info@tulwegroup.com" className="text-blue-600 hover:text-blue-800 font-semibold">Contact: info@tulwegroup.com</a>
-              </div>
-            </div>
-            <div className="text-center text-sm text-gray-500">
-              <p>This website and our services comply with HIPAA (Health Insurance Portability and Accountability Act) and GDPR (General Data Protection Regulation) standards. 
-              Your health information is protected with enterprise-grade security and encryption.</p>
             </div>
           </div>
         </div>
