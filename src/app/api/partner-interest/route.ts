@@ -25,13 +25,13 @@ Contact Information:
 - Partnership Type: ${partnershipType}
 - Message: ${message}
 
-This form submission was sent to both k.adam@tulwegroup.com and hr@tulwegroup.com
+This form submission was sent to both k.adam@tulwegroup.com and info@tulwegroup.com
     `.trim();
 
     // Log the email content (in production, you would send actual emails)
     console.log('Partner Interest Email Content:');
     console.log(emailContent);
-    console.log('Recipients: k.adam@tulwegroup.com, hr@tulwegroup.com');
+    console.log('Recipients: k.adam@tulwegroup.com, info@tulwegroup.com');
 
     // In a real implementation, you would use a service like:
     // - SendGrid
@@ -43,7 +43,7 @@ This form submission was sent to both k.adam@tulwegroup.com and hr@tulwegroup.co
     return NextResponse.json(
       { 
         message: 'Partner interest submitted successfully',
-        recipients: ['k.adam@tulwegroup.com', 'hr@tulwegroup.com']
+        recipients: ['k.adam@tulwegroup.com', 'info@tulwegroup.com']
       },
       { status: 200 }
     );

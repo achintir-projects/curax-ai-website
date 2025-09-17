@@ -113,7 +113,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
-              <img src="/logo.png" alt="CuraX AI" className="h-10 w-auto" />
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" rx="4" fill="#2563eb"/>
+                  <path d="M12 20 C12 20, 6 16, 6 12 C6 10, 7 8, 9 8 C10 8, 11 9, 12 10 C13 9, 14 8, 15 8 C17 8, 18 10, 18 12 C18 16, 12 20, 12 20 Z" 
+                        fill="white" 
+                        transform="translate(0, -1) scale(0.8)"/>
+                </svg>
+              </div>
               <span className="text-xl font-bold text-gray-900">CuraX AI</span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -152,10 +159,17 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <img src="/logo.png" alt="CuraX AI" className="h-20 w-auto mx-auto mb-6" />
+              <div className="w-20 h-20 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="60" height="60" rx="8" fill="#2563eb"/>
+                  <path d="M30 50 C30 50, 15 40, 15 30 C15 25, 18 20, 23 20 C26 20, 29 22, 30 24 C31 22, 34 20, 37 20 C42 20, 45 25, 45 30 C45 40, 30 50, 30 50 Z" 
+                        fill="white" 
+                        transform="translate(0, -2) scale(0.9)"/>
+                </svg>
+              </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              The AI-Powered Health Assistant<br />
+              The AI-Powered Health Operating System<br />
               <span className="text-blue-600">For Your Whole Family</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed max-w-3xl mx-auto">
@@ -191,6 +205,223 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+      </section>
+
+      {/* Product Showcase Section with Animated Images */}
+      <section className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              See CuraX AI in Action
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Experience the intuitive interface that's transforming family healthcare
+            </p>
+          </div>
+
+          {/* Animated Dashboard Preview */}
+          <div className="max-w-6xl mx-auto mb-20">
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4">
+                <h3 className="text-white text-xl font-bold">Family Health Dashboard</h3>
+              </div>
+              <div className="p-8 bg-gradient-to-br from-slate-50 to-white">
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 animate-pulse">
+                    <div className="flex items-center justify-between mb-4">
+                      <h4 className="font-bold text-gray-900">Health Overview</h4>
+                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Symptom Checks</span>
+                        <span className="font-bold text-blue-600">5</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Image Analysis</span>
+                        <span className="font-bold text-green-600">15</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 animate-pulse" style={{animationDelay: '0.2s'}}>
+                    <div className="flex items-center justify-between mb-4">
+                      <h4 className="font-bold text-gray-900">Recent Activity</h4>
+                      <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="bg-red-50 border-l-4 border-red-400 p-3 rounded">
+                        <p className="text-sm font-medium text-red-800">Headache & Migraine</p>
+                        <p className="text-xs text-red-600">Amani • Sep 17 • High Risk</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 animate-pulse" style={{animationDelay: '0.4s'}}>
+                    <div className="flex items-center justify-between mb-4">
+                      <h4 className="font-bold text-gray-900">Family Members</h4>
+                      <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-700">edong boni</span>
+                        <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">45 years</span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-700">chinchirga</span>
+                        <span className="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded">Spouse</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full animate-bounce"></div>
+                    <span className="text-sm font-medium">Real-time Health Monitoring</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Animated Family Members Preview */}
+          <div className="max-w-6xl mx-auto mb-20">
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
+              <div className="bg-gradient-to-r from-purple-600 to-purple-700 px-6 py-4">
+                <h3 className="text-white text-xl font-bold">Family Health Profiles</h3>
+              </div>
+              <div className="p-8 bg-gradient-to-br from-slate-50 to-white">
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border border-blue-200 transform hover:scale-105 transition-all duration-300">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                        EB
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">edong boni</h4>
+                        <p className="text-sm text-gray-600">45 years • Male</p>
+                      </div>
+                    </div>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Height:</span>
+                        <span className="font-medium">178 cm</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Weight:</span>
+                        <span className="font-medium">82 kg</span>
+                      </div>
+                      <div className="pt-2 border-t border-gray-200">
+                        <p className="text-xs text-red-600 font-medium">Conditions: Diabetes, Hypertension</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-pink-50 to-white rounded-xl p-6 shadow-lg border border-pink-200 transform hover:scale-105 transition-all duration-300" style={{transitionDelay: '0.1s'}}>
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                        C
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">chinchirga</h4>
+                        <p className="text-sm text-gray-600">25 years • Female</p>
+                      </div>
+                    </div>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Height:</span>
+                        <span className="font-medium">165 cm</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Weight:</span>
+                        <span className="font-medium">65 kg</span>
+                      </div>
+                      <div className="pt-2 border-t border-gray-200">
+                        <p className="text-xs text-orange-600 font-medium">Allergies: Soy</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-green-50 to-white rounded-xl p-6 shadow-lg border border-green-200 transform hover:scale-105 transition-all duration-300" style={{transitionDelay: '0.2s'}}>
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                        A
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">achintir</h4>
+                        <p className="text-sm text-gray-600">25 years • Female</p>
+                      </div>
+                    </div>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Height:</span>
+                        <span className="font-medium">150 cm</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Weight:</span>
+                        <span className="font-medium">55 kg</span>
+                      </div>
+                      <div className="pt-2 border-t border-gray-200">
+                        <p className="text-xs text-red-600 font-medium">Conditions: Acid Reflux</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Animated Symptom Checker Preview */}
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500">
+              <div className="bg-gradient-to-r from-red-600 to-red-700 px-6 py-4">
+                <h3 className="text-white text-xl font-bold">AI Symptom Checker</h3>
+              </div>
+              <div className="p-8 bg-gradient-to-br from-slate-50 to-white">
+                <div className="mb-6">
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="font-bold text-red-800">AI Analysis for edong boni</h4>
+                      <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full">High Priority</span>
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
+                      <span className="text-sm text-red-700">Confidence: 65%</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h4 className="font-bold text-blue-800 mb-2">Diagnosis</h4>
+                    <p className="text-blue-700 font-medium">Hypertensive Crisis</p>
+                    <div className="mt-2">
+                      <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Severity: Very High</span>
+                      <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded ml-2">Confidence: 95%</span>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <h4 className="font-bold text-green-800 mb-2">Recommended Actions</h4>
+                    <ul className="text-sm text-green-700 space-y-1">
+                      <li>• Hydrate immediately</li>
+                      <li>• Administer pain relief</li>
+                      <li>• Seek medical attention</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="mt-6 text-center">
+                  <div className="inline-flex items-center gap-2 bg-red-100 text-red-800 px-4 py-2 rounded-full">
+                    <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium">Emergency AI Assessment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Problem Section */}

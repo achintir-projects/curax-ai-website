@@ -4,7 +4,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     
-    const { fullName, email, firm, message } = body;
+    const { fullName, email, firm, investorType, message } = body;
     
     // Validate required fields
     if (!fullName || !email || !firm || !message) {
@@ -25,13 +25,13 @@ Contact Information:
 - Investor Type: ${investorType || 'Not specified'}
 - Message: ${message}
 
-This form submission was sent to k.adam@tulwegroup.com only
+This form submission was sent to both k.adam@tulwegroup.com and info@tulwegroup.com
     `.trim();
 
     // Log the email content (in production, you would send actual emails)
     console.log('Investor Interest Email Content:');
     console.log(emailContent);
-    console.log('Recipient: k.adam@tulwegroup.com');
+    console.log('Recipients: k.adam@tulwegroup.com, info@tulwegroup.com');
 
     // In a real implementation, you would use a service like:
     // - SendGrid
@@ -43,7 +43,7 @@ This form submission was sent to k.adam@tulwegroup.com only
     return NextResponse.json(
       { 
         message: 'Investor interest submitted successfully',
-        recipients: ['k.adam@tulwegroup.com']
+        recipients: ['k.adam@tulwegroup.com', 'info@tulwegroup.com']
       },
       { status: 200 }
     );
