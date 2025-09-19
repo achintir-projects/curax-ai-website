@@ -651,7 +651,7 @@ export default function Home() {
               <CardContent className="pt-12 pb-8">
                 <div className="text-7xl font-bold mb-3">$298</div>
                 <p className="text-xl font-bold mb-2">Average Savings</p>
-                <p className="text-green-100">Per family annually</p>
+                <p className="text-green-100">Per family per month</p>
                 <div className="mt-4 text-4xl">💸</div>
               </CardContent>
             </Card>
